@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="gh" fetch="https://github.com/" />
+
+  <!-- hw/qcom -->
+  <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+  <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+  <project path="hardware/qcom-caf/sdm660/display" name="SDM660-lavender/android_hardware_qcom_display" remote="gh" />
+  <project path="hardware/qcom-caf/sdm660/audio" name="SDM660-lavender/android_hardware_qcom_audio" remote="gh" />
+  <project path="hardware/qcom-caf/sdm660/media" name="SDM660-lavender/android_hardware_qcom_media" remote="gh"  />
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="gh" revision="lineage-20" />
+
+</manifest>
